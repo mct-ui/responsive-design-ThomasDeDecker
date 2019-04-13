@@ -200,6 +200,11 @@ a:focus {
     background-color: #F8F7FC;
 }
 
+/* Gradient */
+.o-row--gradient{
+    background: linear-gradient(to bottom left,  #3887F7 0%, #5051DB 100%);
+    color: #fff;
+}
 @media (min-width: 768px) {
     .o-row {
         padding-left: 48px;
@@ -588,6 +593,20 @@ a:focus {
 .c-link-cta:hover::after {
     transform: scaleX(1);
     background-color: #3E3EA8;
+}
+
+.c-link-cta--inverse,
+.c-link-cta--inverse:visited,
+.c-link-cta--inverse:active{
+    color: #FFF;
+}
+
+.c-link-cta--inverse::after,{
+    background-color: #FFF;
+}
+
+.c-link-cta--inverse:hover::after {
+    background-color: #FFF;
 }
 
 /*------------------------------------*\
